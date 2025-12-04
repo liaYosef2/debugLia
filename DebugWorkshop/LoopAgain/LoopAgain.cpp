@@ -9,7 +9,7 @@ int main()
 	std::cout << "what is the size of the series? ";
 	std::cin >> size;
 
-	while (size > 0)
+	while (size > 0)//so size wont change to a diffrent number (beacuase its unsigned) and the loop will end
 	{
 		std::cout << t1 << ", ";
 

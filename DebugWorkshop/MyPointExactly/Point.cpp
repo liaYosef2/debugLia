@@ -9,14 +9,14 @@ Point::Point()
 
 Point::Point(int x, int y)
 {
-	_coord = new int[2];
+	_coord = new int[2]; 
 	_coord[0] = x;
 	_coord[1] = y;
 }
 
 Point::Point(const Point& other)
 {
-	_coord = new int[2];
+	_coord = new int[2]; //diffrent way to copy the points
 	_coord[0] = other.getX();
 	_coord[1] = other.getY();;
 }
@@ -29,7 +29,7 @@ Point::~Point()
 Point& Point::operator=(const Point& other)
 {
 
-	if (this != &other)
+	if (this != &other) //so the object will not try to copy itself
 	{
 		delete[] _coord;
 		_coord = new int[2];
