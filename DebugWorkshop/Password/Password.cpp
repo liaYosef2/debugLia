@@ -9,6 +9,7 @@ struct Password
 	}
 };
 
+//ooooooooooooooo0 16 chars that the last one is 0 so it will leak to the incorrect and make it false
 int main()
 {
 	std::cout << "Enter your password to continue:" << std::endl;
