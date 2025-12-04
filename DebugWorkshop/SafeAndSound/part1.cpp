@@ -4,15 +4,17 @@
 char* string_copy(char* dest, unsigned int destsize, char* src)
 {
 	char* ret = dest;
+	
 	while (*dest++ = *src++)
 		;
+	dest[destsize] = '\0';//added /0
 	return ret;
 }
 
 void part1()
 {
 	char password[] = "secret";
-	char dest[12];
+	char dest[13];//added a place to /0
 	char src[] = "hello world!";
 
 	string_copy(dest, 12, src);
